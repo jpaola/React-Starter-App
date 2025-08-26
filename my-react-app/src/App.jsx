@@ -70,6 +70,10 @@ Updating based on previous state 🚫 Risky ✅ Recommended
 ex.
 setCount(count + 1);            // ❌ might be stale
 setCount(prevCount => prevCount + 1);  // ✅ correct
+
+🧪 Mental Shortcut:
+Does the new state depend on what it used to be?
+If yes → use the functional form.
 */
 function Counter() {
 	const [count, setCount] = useState(0);
