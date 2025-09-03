@@ -66,7 +66,7 @@ export default function Counter() {
             <button onClick={() => setCount((prevCount) => prevCount + 1)}>
                 Increment
             </button>
-            <button onClick={() => setCount((prevCount) => prevCount - 1)}>
+            <button onClick={() => setCount((prevCount) => prevCount - 1)} disabled={count === 0}>
                 Decrease
             </button>
             <button onClick={() => setCount(0)}>Reset Count</button>
